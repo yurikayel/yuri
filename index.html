@@ -13,9 +13,27 @@
         }
 
         .container {
-            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            background: linear-gradient(45deg, rgba(226, 68, 98, 0.9), rgba(177, 37, 234, 0.8), rgba(127, 82, 255, 0.7));
+            background-size: cover;
+            background-position: center;
+            background-size: 800% 800%;
+            animation: gradient 10s ease-in-out infinite, zoomInOut 30s ease-in-out infinite;
+        }
+
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         h1,
@@ -51,17 +69,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <section>
-            <div style="display: flex; justify-content: space-evenly;">
+    <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 8em;">
+            <section style="width: 100%; max-width: 700px;">
 
-                <h1 style="font-size:xx-large;">Yuri Kayel</h1>
-                <div style="display: flex; align-items: center;">
-                    <img src="https://media.licdn.com/dms/image/C4D03AQGbDPjfafZXZQ/profile-displayphoto-shrink_800_800/0/1535805527353?e=1691625600&amp;v=beta&amp;t=irpwyORs1R1iIYAaQeTnr-DjGSaKGj6yuiS92B2wflE"
-                        alt="Yuri Kayel's profile picture"
-                        style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
-                </div>
-                <div style="display: flex; align-items: center;">
+                <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                    <h1 style="font-size:xx-large;">Yuri Kayel</h1>
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGbDPjfafZXZQ/profile-displayphoto-shrink_800_800/0/1535805527353?e=1691625600&amp;v=beta&amp;t=irpwyORs1R1iIYAaQeTnr-DjGSaKGj6yuiS92B2wflE"
+                            alt="Yuri Kayel's profile picture"
+                            style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+                    </div>
                     <div>
                         <p style="font-size: 16px; color: #555;">São Paulo, São Paulo, Brazil</p>
                         <p style="font-size: 16px; color: #555;">Email: kayel.yuri@gmail.com</p>
@@ -69,22 +87,11 @@
                                 href="linkedin.com/in/yurikayel">linkedin.com/in/yurikayel</a></p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <p>✨ Cross-Dev experienced in Java, Kotlin, Dart, Swift and JavaScript. ✨</p>
 
-        <h2>Summary</h2>
-        <p>Cross-Dev Professional with expertise in Flutter, Dart, Java, Kotlin, Swift, and JavaScript.</p>
-
-        <h2>Experience</h2>
-        <div>
-            <h3>Mobile Developer</h3>
-            <p>Azumo</p>
-            <p>Sep 2021 - Feb 2023 (1 year 6 months)</p>
-            <ul>
-                <li>Developed mobile applications using Flutter and Native technologies.</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
-                <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
+            <section style="width: 100%; max-width: 700px;">
                 <h2>Experience</h2>
                 <div>
                     <h3>Mobile Developer</h3>
@@ -96,6 +103,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Freelance Mobile Development</h3>
                     <p>Dev Android</p>
@@ -107,6 +115,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Dev Android Teacher</h3>
                     <p>Digital House Brasil</p>
@@ -117,6 +126,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Dev Android</h3>
                     <p>BRQ Digital Solutions</p>
@@ -127,6 +137,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Dev Android</h3>
                     <p>Accenture</p>
@@ -137,6 +148,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Dev Android Jr</h3>
                     <p>Atlantic Solutions Brazil</p>
@@ -147,6 +159,7 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Dev Android Jr</h3>
                     <p>NONUS DO BRASIL</p>
@@ -157,7 +170,9 @@
                         <li>Implemented responsive and user-friendly interfaces for seamless user experiences.</li>
                     </ul>
                 </div>
+            </section>
 
+            <section style="width: 100%; max-width: 700px;">
                 <div>
                     <h2>Skills</h2>
                     <ul>
@@ -169,24 +184,29 @@
                         <li>JavaScript</li>
                     </ul>
                 </div>
+
                 <div>
                     <h2>Education</h2>
                     <p>Universidade Anhembi Morumbi</p>
                     <p>Análise e Desenvolvimento de Sistemas</p>
                     <p>2015 - 2018</p>
                 </div>
+
                 <div>
-                    <h2>Skills</h2>
                     <p>Conflict Resolution • Microsoft Office • Ethics • Continuous Improvement • Application
                         Development •
                         Documentation • Team Leadership • State Management • Analytical Skills • English</p>
                 </div>
+            </section>
 
+            <section style="width: 100%; max-width: 700px;">
                 <div style="text-align: center;">
                     <a href="https://www.linkedin.com/in/yurikayel/">Visit my LinkedIn profile for more information and
                         a detailed portfolio.</a>
-
                 </div>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
