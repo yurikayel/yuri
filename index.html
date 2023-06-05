@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +11,17 @@
             margin: 0;
             padding: 0;
         }
+        
+        .section {
+            padding: 1rem 0;
+        }
+
 
         .gradient {
             margin: 0 auto;
             background: linear-gradient(45deg, #f88a02cc, #e24462e6, #b125eacc, #7972e3cc);
             background-size: cover;
             background-position: center;
-            background-size: 1500% 1500%;
             animation: gradient 15s ease-in-out infinite;
             display: flex;
             flex-direction: column;
@@ -74,32 +77,65 @@
                 font-size: 18px;
             }
         }
+
+
+        
+        .name-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-info {
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+        }
+
+        .intro {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2em;
+        }
+
+
+        
+        .p {
+            padding: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        
+
+        
+
+        
     </style>
 </head>
 
 <body>
     <div class="gradient" style="position: relative;">
-        <div style="background-color: #FFF8;" <div class="content" style="position: relative;">
+        <div class="content" style="position: relative;">
 
             <section style="width: 100%;">
 
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h1 style="font-size:xx-large;">Yuri Kayel</h1>
+                    <div class="name-title">Yuri Kayel</div>
                     <div>
                         <img src="https://media.licdn.com/dms/image/C4D03AQGbDPjfafZXZQ/profile-displayphoto-shrink_800_800/0/1535805527353?e=1691625600&amp;v=beta&amp;t=irpwyORs1R1iIYAaQeTnr-DjGSaKGj6yuiS92B2wflE"
                             alt="Yuri Kayel's profile picture"
                             style="width: 256px; height: 256px; border-radius: 50%; padding: 2em; margin: 2em;">
                     </div>
-                    <div>
-                        <p style="font-size: 16px; color: #555;">São Paulo, São Paulo, Brazil</p>
-                        <p style="font-size: 16px; color: #555;">Email: kayel.yuri@gmail.com</p>
-                        <p style="font-size: 16px; color: #555;">LinkedIn: <a
-                                href="linkedin.com/in/yurikayel">linkedin.com/in/yurikayel</a></p>
-                    </div>
+                    <br>
+                    <div class="contact-info">
+                        São Paulo 🇧🇷 SP<br>
+                        ☎️ +55 11 952 535 741 <br>
+                        <a href="mailto:kayel.yuri@gmail.com">kayel.yuri@gmail.com</a> 📩<br>
+                        💾 <a href="https://linkedin.com/in/yurikayel">linkedin.com/in/yurikayel</a>
+
                 </div>
             </section>
 
-            <h2>Cross-Dev experienced in ☕Java, ☸️Kotlin, 🐦Flutter, 🎯Dart, ⛩️Svelte and 🦅Swift</h2>
+            <div class="intro">[ ☕Java, ☸️Kotlin, 🐦Flutter, 🎯Dart, ⛩️Svelte, 🦅Swift ]</div>
 
             <section style="width: 100%;">
                 <h2>Experience</h2>
@@ -197,15 +233,16 @@
 
                 <div>
                     <h2>Education</h2>
-                    <p>Universidade Anhembi Morumbi</p>
-                    <p>Análise e Desenvolvimento de Sistemas</p>
-                    <p>2015 - 2018</p>
+                    <ul>
+                    <li>Universidade Anhembi Morumbi</li>
+                    <li>Análise e Desenvolvimento de Sistemas</li>
+                    <li>2015 - 2018</li>
                 </div>
 
                 <div>
-                    <p>Conflict Resolution • Microsoft Office • Ethics • Continuous Improvement • Application
-                        Development •
-                        Documentation • Team Leadership • State Management • Analytical Skills • English</p>
+                    <p class="p">Conflict Resolution • Microsoft Office • Ethics • Continuous Improvement • Application
+                        Development • Documentation • Team Leadership • State Management • Analytical Skills • English </p>
+
                 </div>
             </section>
 
