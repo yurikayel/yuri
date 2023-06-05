@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,18 +8,37 @@
     <title>Yuri Kayel - Professional Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Fira Code Mono', monospace;
             margin: 0;
             padding: 0;
         }
 
-        .container {
+        .gradient {
             margin: 0 auto;
-            background: linear-gradient(45deg, rgba(226, 68, 98, 0.9), rgba(177, 37, 234, 0.8), rgba(127, 82, 255, 0.7));
+            background: linear-gradient(45deg, #f88a02cc, #e24462e6, #b125eacc, #7972e3cc);
             background-size: cover;
             background-position: center;
-            background-size: 800% 800%;
-            animation: gradient 10s ease-in-out infinite, zoomInOut 30s ease-in-out infinite;
+            background-size: 1500% 1500%;
+            animation: gradient 15s ease-in-out infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4em;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bg {
+            background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/1*NBH4uo_2tSg0oosdoaiHUw.jpeg');
+            opacity: 0.3;
         }
 
 
@@ -36,19 +56,8 @@
             }
         }
 
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-
         ul {
             list-style-type: disc;
-            color: #555;
             padding-left: 20px;
         }
 
@@ -69,16 +78,17 @@
 </head>
 
 <body>
-    <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 8em;">
-            <section style="width: 100%; max-width: 700px;">
+    <div class="gradient" style="position: relative;">
+        <div style="background-color: #FFF8;" <div class="content" style="position: relative;">
 
-                <div style="display: flex; justify-content: space-evenly; align-items: center;">
+            <section style="width: 100%;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
                     <h1 style="font-size:xx-large;">Yuri Kayel</h1>
                     <div>
                         <img src="https://media.licdn.com/dms/image/C4D03AQGbDPjfafZXZQ/profile-displayphoto-shrink_800_800/0/1535805527353?e=1691625600&amp;v=beta&amp;t=irpwyORs1R1iIYAaQeTnr-DjGSaKGj6yuiS92B2wflE"
                             alt="Yuri Kayel's profile picture"
-                            style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+                            style="width: 256px; height: 256px; border-radius: 50%; padding: 2em; margin: 2em;">
                     </div>
                     <div>
                         <p style="font-size: 16px; color: #555;">São Paulo, São Paulo, Brazil</p>
@@ -89,9 +99,9 @@
                 </div>
             </section>
 
-            <p>✨ Cross-Dev experienced in Java, Kotlin, Dart, Swift and JavaScript. ✨</p>
+            <h2>Cross-Dev experienced in ☕Java, ☸️Kotlin, 🐦Flutter, 🎯Dart, ⛩️Svelte and 🦅Swift</h2>
 
-            <section style="width: 100%; max-width: 700px;">
+            <section style="width: 100%;">
                 <h2>Experience</h2>
                 <div>
                     <h3>Mobile Developer</h3>
@@ -172,7 +182,7 @@
                 </div>
             </section>
 
-            <section style="width: 100%; max-width: 700px;">
+            <section style="width: 100%;">
                 <div>
                     <h2>Skills</h2>
                     <ul>
@@ -199,12 +209,13 @@
                 </div>
             </section>
 
-            <section style="width: 100%; max-width: 700px;">
+            <section style="width: 100%;">
                 <div style="text-align: center;">
                     <a href="https://www.linkedin.com/in/yurikayel/">Visit my LinkedIn profile for more information and
                         a detailed portfolio.</a>
                 </div>
             </section>
+        
         </div>
     </div>
 </body>
